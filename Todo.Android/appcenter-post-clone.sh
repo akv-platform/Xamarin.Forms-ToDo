@@ -24,3 +24,6 @@ chmod +x dotnet-install.sh
 echo "====================================================="
 
 echo ".NET Core version: $(dotnet --version)"
+
+echo "~/"
+ls ~
