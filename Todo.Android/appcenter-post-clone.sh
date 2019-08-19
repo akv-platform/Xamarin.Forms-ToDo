@@ -13,9 +13,9 @@ echo "======== Switch .Net Core version to ${DOTNET_VERSION} ========"
 
 wget https://dot.net/v1/dotnet-install.sh
 chmod +x dotnet-install.sh
-./dotnet-install.sh --version ${DOTNET_VERSION}
+./dotnet-install.sh --version ${DOTNET_VERSION} --install-dir "/Users/Shared/.dotnet"
 
-export PATH="${~}/.dotnet:${PATH}"
+export PATH="/Users/Shared/.dotnet:${PATH}"
 
 echo "====================================================="
 
