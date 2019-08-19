@@ -1,4 +1,4 @@
-DOTNET_VERSION="2.2.300"
+DOTNET_VERSION="2.2.105"
 echo "======== Switch .Net Core version to ${DOTNET_VERSION} ========"
 
 # sudo rm -rf "/Users/vsts/.dotnet"
