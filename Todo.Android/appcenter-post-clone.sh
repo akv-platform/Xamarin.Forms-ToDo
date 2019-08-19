@@ -19,4 +19,4 @@ chmod +x dotnet-install.sh
 
 export PATH="/Users/vsts/.dotnet:$PATH" 
 # Throw `PATH` to the next step (AzDO specific)
-echo '##vso[task.setvariable variable=PATH;]'$PATH
+echo '##vso[task.prependpath]'$PATH
