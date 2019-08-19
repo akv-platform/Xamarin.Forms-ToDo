@@ -7,3 +7,6 @@ echo "SDK version: $(cat /Library/Frameworks/Xamarin.iOS.framework/Versions/Curr
 
 echo "Available .NET Core runtimes:"
 dotnet --list-runtimes
+
+echo "Path:"
+echo $PATH
