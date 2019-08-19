@@ -15,7 +15,9 @@ wget https://dot.net/v1/dotnet-install.sh
 chmod +x dotnet-install.sh
 ./dotnet-install.sh --version ${DOTNET_VERSION} --install-dir "/Users/Shared/.dotnet"
 
-export PATH="/Users/Shared/.dotnet:${PATH}"
+PATH="/Users/Shared/.dotnet:${PATH}"
+# Throw `PATH` to the next step (AzDO specific)
+echo '##vso[task.setvariable variable=PATH;]'$PATH
 
 echo "====================================================="
 
